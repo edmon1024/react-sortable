@@ -16,7 +16,7 @@ There is a major breaking change since v1.0. Checkout [Migration Guide](https://
 ### Webpack or Browserify
 The easiest way to use react-sortablejs is to install it from npm and include it in your React build process using webpack or browserify.
 ```bash
-npm install --save react react-dom sortablejs@1.5.0-rc1  # Install peerDependencies
+npm install --save react react-dom sortablejs@1.6.1  # Install peerDependencies
 npm install --save react-sortablejs
 ```
 
@@ -186,7 +186,7 @@ A controlled component will keep DOM nodes untouched. You have to change state t
 import uniqueId from 'lodash/uniqueId';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Sortable from '../src';
+import Sortable from 'react-sortablejs';
 
 class App extends React.Component {
     state = {
@@ -224,7 +224,7 @@ File: shared-group.jsx
 ```js
 import uniqueId from 'lodash/uniqueId';
 import React from 'react';
-import Sortable from '../src';
+import Sortable from 'react-sortablejs';
 
 // Functional Component
 const SharedGroup = ({ items }) => {
